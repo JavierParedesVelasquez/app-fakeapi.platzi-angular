@@ -1,0 +1,11 @@
+<h1>Hola {{title}}</h1>
+<button (click)="changeTitle()">Change</button>
+
+
+<!-- Vamos a utilizar el componente product, crear o instanciar ese componente -->
+<!-- Para esto el componente tiene algo llamado: "selector" -->
+<!-- El selector es la forma en que nosotros vamos a llamarlo como un componente mas de HTML -->
+
+<!-- Mi componente ya esta recibiendo algo, osea un Input -->
+<!-- Se puede hacer el render o la iteracion con *ngFor -->
+<app-product [product]="product" *ngFor="let product of products"></app-product>
